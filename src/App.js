@@ -256,7 +256,7 @@ function App() {
         <div className="hero-content">
           <span className="hero-label">Análisis de Datos Históricos</span>
           <h1 className="hero-title">
-            Tsunami del Océano Índico
+            Tsunami de Sumatra 2004
             <span className="hero-subtitle">26 de Diciembre, 2004</span>
           </h1>
           <div className="hero-stats">
