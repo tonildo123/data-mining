@@ -510,6 +510,31 @@ function App() {
                   densidad poblacional costera y falta de sistemas de alerta
                   temprana.
                 </p>
+
+                <div className="stats-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Año</th>
+                        <th>Nombre</th>
+                        <th>Ubicación</th>
+                        <th>Magnitud</th>
+                        <th>Víctimas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {tsunamiData.historicalTsunamis.map((tsunami, index) => (
+                        <tr key={index}>
+                          <td>{tsunami.year}</td>
+                          <td>{tsunami.name}</td>
+                          <td>{tsunami.location}</td>
+                          <td>{tsunami.magnitude}</td>
+                          <td>{tsunami.deaths.toLocaleString()}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               <div className="chart-container">
