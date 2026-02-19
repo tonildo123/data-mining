@@ -151,3 +151,163 @@ El dashboard es completamente funcional y puede ejecutarse localmente con `npm s
 **Autor**: Dashboard creado para el curso de Data Analytics  
 **Fecha**: Febrero 2026  
 **Tema**: Análisis del Tsunami del Océano Índico 2004
+
+<!-- Para el examen  -->
+
+Excelente pregunta. Basándome en que es un examen de Data Analytics y lo que has implementado, aquí está tu guía de estudio:
+📚 Temas que DEBES dominar:
+1️⃣ Tipos de Análisis de Datos
+Análisis Descriptivo:
+
+Qué es: Resume y describe características de un dataset
+Métricas que usaste:
+
+Media/Promedio (28,487 víctimas por país)
+Total (227,898 víctimas)
+Tasa de mortalidad (13.1%)
+Distribuciones y proporciones
+
+Pregunta probable: "¿Qué es el análisis descriptivo y qué métricas usaste?"
+
+Análisis Comparativo:
+
+Qué es: Compara diferentes grupos/períodos para encontrar diferencias
+Lo que hiciste:
+
+Comparaste Sumatra 2004 con tsunamis históricos
+Benchmarking de magnitud vs mortalidad
+Comparación de ayuda internacional
+
+Pregunta probable: "¿Por qué Sumatra 2004 fue más mortal que Valdivia 1960 si tuvo menor magnitud?"
+
+Respuesta: Densidad poblacional costera, falta de sistema de alerta, hora del día
+
+Análisis Predictivo/Correlacional:
+
+Qué es: Usa datos históricos para predecir comportamientos futuros
+Lo que hiciste:
+
+Correlación distancia-mortalidad (R² = 0.82)
+Modelo de distribución temporal
+Estimación de vidas salvables con alerta temprana
+
+Pregunta probable: "¿Qué significa R² = 0.82?"
+
+Respuesta: El 82% de la variación en mortalidad se explica por la distancia del epicentro
+
+2️⃣ Estadística Básica
+Conceptos clave:
+
+Media: Suma de valores / cantidad
+Distribución: Cómo se reparten los datos
+Correlación: Relación entre dos variables (-1 a +1)
+Correlación negativa: A mayor distancia, menor mortalidad
+Porcentaje: (parte/total) × 100
+
+Preguntas probables:
+
+"¿Cuál fue la media de víctimas por país?" → 28,487
+"¿Qué país concentró el mayor porcentaje?" → Indonesia (73.7%)
+"¿Hay correlación entre distancia y mortalidad?" → Sí, exponencial negativa (R² = 0.82)
+
+3️⃣ Visualización de Datos
+Tipos de gráficos que usaste y CUÁNDO usarlos:
+GráficoCuándo usarTu ejemploBar ChartComparar categoríasVíctimas por paísPie ChartMostrar proporciones de un todo% de víctimas Top 5Line ChartTendencias en el tiempoMagnitud históricaScatter PlotCorrelaciones entre variablesDistancia vs mortalidadArea ChartVolumen acumulado en el tiempoDistribución temporal
+Pregunta probable: "¿Por qué elegiste un scatter plot para distancia vs mortalidad?"
+
+Respuesta: Porque necesitaba mostrar la relación/correlación entre dos variables numéricas continuas
+
+4️⃣ Interpretación de Datos
+Insights clave que DEBES saber explicar:
+
+"Indonesia tuvo el 73.7% de las víctimas"
+
+¿Por qué? → Más cercano al epicentro (150km), población costera densa, primera zona impactada
+
+"La primera hora concentró el 52.6% de muertes"
+
+¿Qué implica? → Un sistema de alerta de 15 min habría salvado 40-60% de vidas
+
+"Distancia explica el 82% de la mortalidad"
+
+¿Qué significa? → Es el factor más determinante, más importante que magnitud
+
+"Sumatra fue 38x más mortal que Chile 1960"
+
+¿Por qué si Chile tuvo mayor magnitud? → Hora del día, población costera, sistemas de alerta
+
+5️⃣ Metodología y Proceso
+Pregunta probable: "¿Cómo hiciste el análisis? Explica tu metodología"
+Tu respuesta estructurada:
+
+Recolección de datos: Fuentes oficiales (USGS, NOAA, UN)
+Limpieza: Consolidé datos de 8 países afectados
+Análisis descriptivo: Calculé totales, promedios, tasas
+Análisis comparativo: Comparé con 6 tsunamis históricos
+Análisis predictivo: Creé modelo de correlación distancia-mortalidad
+Visualización: 7 tipos de gráficos con Recharts
+Conclusiones: Identifiqué patrones y recomendaciones
+
+6️⃣ Tecnologías (Justificación)
+Pregunta probable: "¿Por qué elegiste React y Recharts?"
+Respuesta:
+
+React: Framework moderno, componentes reutilizables, fácil mantenimiento
+Recharts: Librería especializada en data viz, responsive, compatible con React
+Alternativas consideradas: Chart.js (menos declarativo), D3.js (más complejo)
+
+🎯 Preguntas más probables del profesor:
+Sobre tu análisis:
+
+✅ "Explica los 3 tipos de análisis que hiciste"
+✅ "¿Qué conclusiones sacaste del análisis?"
+✅ "¿Por qué usaste estos gráficos específicos?"
+✅ "¿Qué significa esta correlación?"
+✅ "Si tuvieras que recomendar políticas públicas basándote en estos datos, ¿cuáles serían?"
+
+Sobre metodología:
+
+✅ "¿De dónde sacaste los datos?"
+✅ "¿Cómo validaste la calidad de los datos?"
+✅ "¿Qué limitaciones tiene tu análisis?"
+
+Técnicas:
+
+✅ "¿Qué tecnologías usaste y por qué?"
+✅ "Si tuvieras que hacer el análisis en Python, ¿qué librerías usarías?"
+
+Respuesta: Pandas (análisis), Matplotlib/Seaborn (visualización), Scikit-learn (modelos predictivos)
+
+💡 Tus 3 conclusiones principales (memoriza):
+
+Distancia es el factor crítico: El 82% de la variación en mortalidad se explica por proximidad al epicentro. Zonas <500km requieren evacuación inmediata.
+La primera hora es determinante: El 52.6% de muertes ocurrieron en 60 minutos. Sistemas de alerta temprana de 15 min podrían reducir mortalidad 40-60%.
+Densidad poblacional amplifica el impacto: Aunque Chile 1960 tuvo mayor magnitud (9.5 vs 9.1), Sumatra fue 38x más mortal por población costera densa y falta de preparación.
+
+📖 Posibles preguntas difíciles:
+"¿Qué harías diferente si tuvieras más tiempo?"
+
+Análisis de series temporales de réplicas
+Machine learning para predicción de zonas de riesgo
+Integración con datos sísmicos en tiempo real
+Análisis de efectividad de sistemas de alerta por región
+
+"¿Cuáles son las limitaciones de tu análisis?"
+
+Datos agregados (no tengo datos granulares por hora/zona)
+No consideré factores socioeconómicos (pobreza, infraestructura)
+Modelo correlacional, no causal (correlación ≠ causación)
+Dataset histórico (no incluye tsunamis más recientes)
+
+✅ Checklist antes del examen:
+
+Puedo explicar los 3 tipos de análisis sin ver notas
+Sé por qué elegí cada tipo de gráfico
+Conozco las 3 conclusiones principales
+Puedo explicar qué significa R² = 0.82
+Sé calcular porcentajes y medias mentalmente
+Conozco las fuentes de mis datos
+Puedo justificar mis decisiones tecnológicas
+Tengo el dashboard desplegado en una URL funcionando
+
+¿Quieres que te prepare una presentación en PowerPoint o un documento PDF con todo esto resumido para estudiar más fácil?
